@@ -18,7 +18,7 @@ public class BookShelfIterator implements Iterator{
     }
 
     /**
-     * 确定接下来是否可以调用next方法，可以就返回true
+     * 确定接下来是否可以调用next方法
      * @return
      */
     @Override
