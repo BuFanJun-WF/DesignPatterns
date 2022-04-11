@@ -30,4 +30,8 @@ public class BookShelf implements Aggregate{
     public Iterator iterator() {
         return new BookShelfIterator(this);
     }
+
+    public Iterator reverseIterator() {
+        return new BookShelfIteratorInReverse(this);
+    }
 }

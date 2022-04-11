@@ -19,5 +19,12 @@ public class Main {
             Book book = (Book) iterator.next();
             System.out.println(book.getName());
         }
+
+        System.out.println();
+        Iterator reverseIterator = bookShelf.reverseIterator();
+        while (reverseIterator.hasNext()){
+            Book book = (Book) reverseIterator.next();
+            System.out.println(book.getName());
+        }
     }
 }
