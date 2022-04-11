@@ -17,6 +17,10 @@ public class BookShelfIterator implements Iterator{
         this.index = 0;
     }
 
+    /**
+     * 确定接下来是否可以调用next方法
+     * @return
+     */
     @Override
     public boolean hasNext() {
         if (index < bookShelf.getLength()){
@@ -26,6 +30,10 @@ public class BookShelfIterator implements Iterator{
         }
     }
 
+    /**
+     * 返回当前元素，并指向下一个元素
+     * @return
+     */
     @Override
     public Object next() {
         Book book = bookShelf.getBookAt(index);
