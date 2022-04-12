@@ -10,7 +10,7 @@ public class Banner {
 
     private String string;
 
-    Banner(String string) {
+    public Banner(String string) {
         this.string = string;
     }
 
